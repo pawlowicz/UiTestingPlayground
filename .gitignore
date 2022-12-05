@@ -2,7 +2,7 @@
 /node_modules
 
 # e2e
-/e2e/1-getting-started/*.js
-/e2e/1-getting-started/*.map
-/e2e/2-advanced-examples/*.js
-/e2e/2-advanced-examples/*.map
+/cypress/e2e/1-getting-started/*.js
+/cypress/e2e/1-getting-started/*.map
+/cypress/e2e/2-advanced-examples/*.js
+/cypress/e2e/2-advanced-examples/*.map
