@@ -31,6 +31,14 @@ describe ('Basic UI tests', () => {
         cy.get('.bg-success', {timeout: 15000}).contains('Data calculated on the client side.');
     })
 
+    it('Click test', () => {
+        cy.visit('http://uitestingplayground.com/click');
+        
+        cy.get('[id="badButton"]').click().then( (btn) => {
+            cy.wrap(btn).should('have.css', 'background-color', 'rgb(40, 167, 69)');
+        }) 
+    })
+
     it('Text Input test', () => {
         navigateTo.chosenPage('Text Input');
 
@@ -45,7 +53,7 @@ describe ('Basic UI tests', () => {
         cy.get('.bg-primary').contains('Welcome');
     })
 
-    it.only('Sample App', () => {
+    it('Sample App', () => {
         navigateTo.chosenPage('Sample App');
         cy.get('[placeholder="User Name"]').type('Weronika');
         cy.get('[name="Password"]').type('pwd');
