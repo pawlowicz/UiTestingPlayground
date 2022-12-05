@@ -1,8 +1,6 @@
 # dependencies
-/node_modules
+node_modules
 
 # e2e
-/cypress/e2e/1-getting-started/*.js
-/cypress/e2e/1-getting-started/*.map
-/cypress/e2e/2-advanced-examples/*.js
-/cypress/e2e/2-advanced-examples/*.map
+cypress/e2e/1-getting-started
+cypress/e2e/2-advanced-examples
